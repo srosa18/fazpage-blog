@@ -1,0 +1,83 @@
+:root {
+  --ink: #1a1714;
+  --ink-soft: #4a443d;
+  --paper: #faf7f2;
+  --paper-2: #f1ece3;
+  --line: #e3dccf;
+  --accent: #e2562b;
+  --accent-ink: #b23d18;
+  --max: 720px;
+  --wide: 1080px;
+  --serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 18px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+.wrap-wide { width: 100%; max-width: var(--wide); margin: 0 auto; padding: 0 24px; }
+
+a { color: var(--accent-ink); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.15; letter-spacing: -0.01em; color: var(--ink); }
+h1 { font-size: clamp(2rem, 5vw, 3.1rem); }
+h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin-top: 2.4em; }
+h3 { font-size: 1.3rem; margin-top: 1.8em; }
+
+/* Header */
+.site-header { border-bottom: 1px solid var(--line); background: var(--paper); }
+.site-header .bar { display: flex; align-items: center; justify-content: space-between; padding: 20px 24px; max-width: var(--wide); margin: 0 auto; }
+.brand { font-family: var(--serif); font-weight: 600; font-size: 1.35rem; color: var(--ink); letter-spacing: -0.01em; }
+.brand:hover { text-decoration: none; }
+.brand .dot { color: var(--accent); }
+.nav a { color: var(--ink-soft); font-size: 0.95rem; margin-left: 22px; font-weight: 500; }
+.nav a:hover { color: var(--accent-ink); text-decoration: none; }
+
+/* Hero */
+.hero { padding: 72px 0 28px; }
+.hero .kicker { font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-ink); font-weight: 600; }
+.hero h1 { margin: 14px 0 12px; max-width: 16ch; }
+.hero p { font-size: 1.2rem; color: var(--ink-soft); max-width: 46ch; margin: 0; }
+
+/* Post list */
+.list { padding: 24px 0 80px; }
+.post-card { padding: 30px 0; border-top: 1px solid var(--line); }
+.post-card:first-child { border-top: none; }
+.post-card .meta { font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-ink); font-weight: 600; }
+.post-card h2 { font-size: 1.6rem; margin: 8px 0 6px; }
+.post-card h2 a { color: var(--ink); }
+.post-card h2 a:hover { color: var(--accent-ink); text-decoration: none; }
+.post-card p { color: var(--ink-soft); margin: 0; }
+.post-card .more { display: inline-block; margin-top: 10px; font-weight: 600; font-size: 0.95rem; }
+
+/* Article */
+.article { padding: 56px 0 40px; }
+.article .meta { font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-ink); font-weight: 600; }
+.article h1 { margin: 14px 0 10px; }
+.article .lede { color: var(--ink-soft); font-size: 1.05rem; margin: 0 0 8px; }
+.article .byline { color: var(--ink-soft); font-size: 0.95rem; border-bottom: 1px solid var(--line); padding-bottom: 28px; }
+.prose { padding-top: 28px; }
+.prose p { margin: 0 0 1.3em; }
+.prose ol, .prose ul { margin: 0 0 1.5em; padding-left: 1.3em; }
+.prose li { margin-bottom: 0.6em; }
+.prose strong { color: var(--ink); }
+.prose blockquote { margin: 1.5em 0; padding: 14px 22px; border-left: 3px solid var(--accent); background: var(--paper-2); border-radius: 0 8px 8px 0; color: var(--ink-soft); }
+
+/* CTA community block (auto style for last blockquote not needed) */
+.back { display: inline-block; margin: 10px 0 0; font-weight: 600; }
+
+/* Footer */
+.site-footer { border-top: 1px solid var(--line); background: var(--paper-2); margin-top: 40px; }
+.site-footer .inner { padding: 40px 24px; max-width: var(--wide); margin: 0 auto; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: baseline; color: var(--ink-soft); font-size: 0.92rem; }
+.site-footer .brand-sm { font-family: var(--serif); font-weight: 600; color: var(--ink); font-size: 1.1rem; }
+.site-footer a { color: var(--ink-soft); }

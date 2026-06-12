@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const fmt = (d) => d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' });
+---
+<Base title={undefined} description="Design, sites, conversão e CRM explicados em português de gente, para quem empreende.">
+  <section class="hero wrap">
+    <p class="kicker">Blog da FazPage</p>
+    <h1>Design que qualquer dono de negócio entende, e usa na segunda-feira.</h1>
+    <p>Sites, conversão, UX e CRM explicados sem tecniquês. Sofisticado no conteúdo, simples na leitura.</p>
+  </section>
+
+  <section class="list wrap">
+    {posts.map((post) => (
+      <article class="post-card">
+        <div class="meta">{post.data.pillarLabel} &middot; {fmt(post.data.pubDate)}</div>
+        <h2><a href={`/blog/${post.id}/`}>{post.data.title}</a></h2>
+        <p>{post.data.description}</p>
+        <a class="more" href={`/blog/${post.id}/`}>Ler o artigo &rarr;</a>
+      </article>
+    ))}
+  </section>
+</Base>
