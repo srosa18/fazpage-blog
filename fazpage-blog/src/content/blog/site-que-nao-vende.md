@@ -3,8 +3,9 @@ title: "Por que as pessoas entram no seu site e vão embora sem comprar"
 description: "As pessoas não vão embora por azar. Vão embora por cinco motivos concretos, que se repetem e que dá para consertar."
 pubDate: 2026-06-15
 pillar: "P1"
-pillarLabel: "Site que vende"
+pillarLabel: "Site que não vende"
 author: "Sandro Rosa"
+cover: "/IMAGENS/site-que-nao-vende.png"
 ---
 
 Você investiu num site. Pagou, esperou, ficou orgulhoso quando ficou pronto. As pessoas até entram. Você vê isso nos números. Mas a venda não vem. O telefone não toca, o WhatsApp não apita, o pedido não cai. E fica aquela pergunta no ar: se tem gente entrando, por que ninguém compra?
