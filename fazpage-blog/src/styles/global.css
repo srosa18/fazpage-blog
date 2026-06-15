@@ -49,6 +49,8 @@ img{max-width:100%;display:block}
 .art-head .kick{display:inline-block;background:var(--green);color:#142400;font-size:12px;font-weight:600;letter-spacing:.03em;padding:5px 12px;border-radius:6px}
 .art-head h1{font-size:clamp(34px,5vw,52px);font-weight:400;line-height:1.08;letter-spacing:-.02em;margin:18px 0 18px}
 .meta{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:16px 0;font-size:14px;color:var(--muted)}
+.meta .share a,.meta .share button{color:var(--ink);background:none;border:0;font:inherit;padding:0;cursor:pointer}
+.meta .share a:hover,.meta .share button:hover{color:var(--green-deep);text-decoration:underline;text-underline-offset:3px}
 .prose{padding:40px 0 10px}
 .prose p{font-size:18px;line-height:1.8;color:var(--body);margin:0 0 1.5em}
 .prose p strong{color:var(--ink);font-weight:600}
