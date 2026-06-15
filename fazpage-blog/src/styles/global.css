@@ -10,8 +10,10 @@ body{font-family:var(--sans);background:var(--paper);color:var(--ink);font-size:
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 
-/* Frame: same left edge as the logo for everything */
+/* Frame: same left edge as the logo (home / wide sections) */
 .col, .wide{max-width:var(--frame);margin:0 auto;padding:0 40px}
+/* Centered reading column (article pages) */
+.read{max-width:var(--measure);margin:0 auto;padding:0 28px}
 
 /* Header */
 .nav{max-width:var(--frame);margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:22px 40px}
