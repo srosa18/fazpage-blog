@@ -1,5 +1,5 @@
 ---
-title: "Antes de pensar no site, pense na pessoa do outro lado"
+title: "Antes de pensar no site, pense no seu cliente do outro lado"
 description: "O erro mais comum de quem faz um site é começar pelo site. O começo certo é a pessoa que vai usar ele."
 pubDate: 2026-06-14
 pillar: "P2"
