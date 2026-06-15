@@ -49,7 +49,7 @@ img{max-width:100%;display:block}
 /* Article */
 .art-head{padding-top:54px}
 .art-head .kick{display:inline-block;background:var(--green);color:#142400;font-size:12px;font-weight:600;letter-spacing:.03em;padding:5px 12px;border-radius:6px}
-.art-head h1{font-size:clamp(34px,5vw,52px);font-weight:400;line-height:1.08;letter-spacing:-.02em;margin:18px 0 18px;max-width:22ch}
+.art-head h1{font-size:clamp(34px,5vw,52px);font-weight:400;line-height:1.08;letter-spacing:-.02em;margin:18px 0 18px;text-wrap:balance}
 .meta{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;max-width:var(--measure);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:16px 0;font-size:14px;color:var(--muted)}
 .meta .share a,.meta .share button{color:var(--ink);background:none;border:0;font:inherit;padding:0;cursor:pointer}
 .meta .share a:hover,.meta .share button:hover{color:var(--green-deep);text-decoration:underline;text-underline-offset:3px}
@@ -79,7 +79,7 @@ img{max-width:100%;display:block}
 footer{background:var(--footer);color:#cfcfc6;padding:58px 0 30px;margin-top:72px}
 footer .fcol{max-width:var(--frame);margin:0 auto;padding:0 40px}
 footer .ftop{display:flex;justify-content:space-between;gap:48px;flex-wrap:wrap;padding-bottom:36px;border-bottom:1px solid #262a1c}
-footer .fbrand{display:flex;flex-direction:column;gap:12px;max-width:330px}
+footer .fbrand{display:flex;flex-direction:column;gap:4px;max-width:330px}
 footer .ftag{color:var(--green);font-size:14px;line-height:1.55}
 footer .fcta{background:var(--green);color:#142400;font-weight:600;font-size:14px;padding:11px 18px;border-radius:24px;display:inline-block;width:fit-content;margin-top:18px}
 footer .fnav{display:flex;gap:56px}
