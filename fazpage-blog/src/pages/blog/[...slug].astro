@@ -11,6 +11,7 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 const fmt = (d) => d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' });
+const pageUrl = new URL(`/blog/${post.id}/`, Astro.site).href;
 
 const all = (await getCollection('blog', ({ data }) => !data.draft))
   .filter((p) => p.id !== post.id)
@@ -54,6 +55,18 @@ const all = (await getCollection('blog', ({ data }) => !data.draft))
       });
     })();
   </script>
+
+  <section class="comments col">
+    <h2 class="cmt-h">Comentários</h2>
+    <div id="cusdis_thread"
+      data-host="https://cusdis.com"
+      data-app-id="830e57f1-c1a2-4a67-a38d-0a17cc951496"
+      data-page-id={post.id}
+      data-page-url={pageUrl}
+      data-page-title={post.data.title}>
+    </div>
+    <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+  </section>
 
   {all.length > 0 && (
     <section class="related wide">
