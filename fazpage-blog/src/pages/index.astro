@@ -1,27 +1,47 @@
 ---
 import Base from '../layouts/Base.astro';
+import Cover from '../components/Cover.astro';
 import { getCollection } from 'astro:content';
 
 const posts = (await getCollection('blog', ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-const fmt = (d) => d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' });
+const featured = posts[0];
+const rest = posts.slice(1);
+const fmt = (d) => d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
 ---
 <Base title={undefined} description="Design, sites, conversão e CRM explicados em português de gente, para quem empreende.">
-  <section class="hero wrap">
-    <p class="kicker">Blog da FazPage</p>
+  <section class="home-head col">
+    <span class="kick">Blog da FazPage</span>
     <h1>Design que qualquer dono de negócio entende, e usa na segunda-feira.</h1>
     <p>Sites, conversão, UX e CRM explicados sem tecniquês. Sofisticado no conteúdo, simples na leitura.</p>
   </section>
 
-  <section class="list wrap">
-    {posts.map((post) => (
-      <article class="post-card">
-        <div class="meta">{post.data.pillarLabel} &middot; {fmt(post.data.pubDate)}</div>
-        <h2><a href={`/blog/${post.id}/`}>{post.data.title}</a></h2>
-        <p>{post.data.description}</p>
-        <a class="more" href={`/blog/${post.id}/`}>Ler o artigo &rarr;</a>
-      </article>
-    ))}
-  </section>
+  {featured && (
+    <a href={`/blog/${featured.id}/`}>
+      <div class="cover" style="margin-top:24px"><Cover pillar={featured.data.pillar} /></div>
+      <section class="feat col">
+        <div class="ft-meta">{featured.data.pillarLabel} · {fmt(featured.data.pubDate)}</div>
+        <h2>{featured.data.title}</h2>
+        <p class="ft-sub">{featured.data.description}</p>
+        <span class="more">Ler o artigo →</span>
+      </section>
+    </a>
+  )}
+
+  {rest.length > 0 && (
+    <section class="col" style="margin-top:64px">
+      <div class="section-h">Mais artigos</div>
+      <div class="grid">
+        {rest.map((post) => (
+          <a class="card" href={`/blog/${post.id}/`}>
+            <div class="cov"><Cover pillar={post.data.pillar} /></div>
+            <h3>{post.data.title}</h3>
+            <p>{post.data.description}</p>
+            <div class="foot"><span>{fmt(post.data.pubDate)}</span><span class="more">Ler mais →</span></div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
 </Base>

@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Cover from '../../components/Cover.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -10,16 +11,42 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 const fmt = (d) => d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' });
+
+const all = (await getCollection('blog', ({ data }) => !data.draft))
+  .filter((p) => p.id !== post.id)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 2);
 ---
 <Base title={post.data.title} description={post.data.description}>
-  <article class="article wrap">
-    <div class="meta">{post.data.pillarLabel}</div>
+  <div class="art-head col">
+    <span class="kick">{post.data.pillarLabel}</span>
     <h1>{post.data.title}</h1>
-    <p class="lede">{post.data.description}</p>
-    <div class="byline">Por {post.data.author} &middot; {fmt(post.data.pubDate)}</div>
-    <div class="prose">
-      <Content />
+    <div class="meta">
+      <span>Por {post.data.author} · {fmt(post.data.pubDate)}</span>
+      <span class="share">Compartilhar:&nbsp; X&nbsp; ·&nbsp; LinkedIn&nbsp; ·&nbsp; Copiar link</span>
     </div>
-    <a class="back" href="/">&larr; Voltar para os artigos</a>
+  </div>
+
+  <div class="cover"><Cover pillar={post.data.pillar} /></div>
+
+  <article class="prose col">
+    <Content />
+    <a class="back" href="/">← Voltar para os artigos</a>
   </article>
+
+  {all.length > 0 && (
+    <section class="related col">
+      <div class="section-h">Continue lendo</div>
+      <div class="grid">
+        {all.map((p) => (
+          <a class="card" href={`/blog/${p.id}/`}>
+            <div class="cov"><Cover pillar={p.data.pillar} /></div>
+            <h3>{p.data.title}</h3>
+            <p>{p.data.description}</p>
+            <div class="foot"><span>{fmt(p.data.pubDate)}</span><span class="more">Ler mais →</span></div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
 </Base>
