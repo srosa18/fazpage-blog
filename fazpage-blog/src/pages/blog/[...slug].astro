@@ -23,7 +23,7 @@ const all = (await getCollection('blog', ({ data }) => !data.draft))
     <h1>{post.data.title}</h1>
     <div class="meta">
       <span>Por {post.data.author} · {fmt(post.data.pubDate)}</span>
-      <span class="share">Compartilhar:&nbsp; X&nbsp; ·&nbsp; LinkedIn&nbsp; ·&nbsp; Copiar link</span>
+      <span class="share" data-title={post.data.title}>Compartilhar:&nbsp; <a class="sh-x" href="#" target="_blank" rel="noopener">X</a>&nbsp; ·&nbsp; <a class="sh-li" href="#" target="_blank" rel="noopener">LinkedIn</a>&nbsp; ·&nbsp; <button type="button" class="sh-copy">Copiar link</button></span>
     </div>
   </div>
 
@@ -34,8 +34,29 @@ const all = (await getCollection('blog', ({ data }) => !data.draft))
     <a class="back" href="/">← Voltar para os artigos</a>
   </article>
 
+  <script is:inline>
+    (function () {
+      var box = document.querySelector('.share');
+      if (!box) return;
+      var url = location.href;
+      var title = box.getAttribute('data-title') || document.title;
+      var x = box.querySelector('.sh-x');
+      if (x) x.href = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(title);
+      var li = box.querySelector('.sh-li');
+      if (li) li.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(url);
+      var cp = box.querySelector('.sh-copy');
+      if (cp) cp.addEventListener('click', function () {
+        navigator.clipboard.writeText(url).then(function () {
+          var old = cp.textContent;
+          cp.textContent = 'Link copiado!';
+          setTimeout(function () { cp.textContent = old; }, 1800);
+        });
+      });
+    })();
+  </script>
+
   {all.length > 0 && (
-    <section class="related col">
+    <section class="related wide">
       <div class="section-h">Continue lendo</div>
       <div class="grid">
         {all.map((p) => (
