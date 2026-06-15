@@ -35,7 +35,7 @@ const fmt = (d) => d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'short
       <div class="grid">
         {rest.map((post) => (
           <a class="card" href={`/blog/${post.id}/`}>
-            <div class="cov"><Cover pillar={post.data.pillar} /></div>
+            <div class="cov">{post.data.cover ? <img src={post.data.cover} alt="" style="width:100%;height:100%;object-fit:cover" /> : <Cover pillar={post.data.pillar} />}</div>
             <h3>{post.data.title}</h3>
             <p>{post.data.description}</p>
             <div class="foot"><span>{fmt(post.data.pubDate)}</span><span class="more">Ler mais →</span></div>
