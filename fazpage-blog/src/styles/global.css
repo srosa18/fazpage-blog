@@ -21,6 +21,16 @@ img{max-width:100%;display:block}
 .nav .menu a.active{position:relative;font-weight:500}
 .nav .menu a.active::after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:2px;background:var(--green)}
 .pill{background:var(--green);color:#142400;font-weight:600;font-size:13px;padding:9px 16px;border-radius:24px}
+.logo-img{height:30px;display:block}
+.hamb{display:none;flex-direction:column;justify-content:center;gap:5px;width:34px;height:34px;background:none;border:0;padding:6px;cursor:pointer}
+.hamb span{display:block;width:100%;height:2px;background:var(--ink);border-radius:2px;transition:transform .2s,opacity .2s}
+.hamb.on span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamb.on span:nth-child(2){opacity:0}
+.hamb.on span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:block;background:var(--paper);border-bottom:1px solid var(--line);padding:4px 22px 14px}
+.mobile-menu[hidden]{display:none}
+.mobile-menu a{display:block;padding:13px 2px;font-size:16px;color:var(--ink);border-top:1px solid var(--line)}
+.mobile-menu a:first-child{border-top:0}
 
 /* Full-bleed cover */
 .cover{width:100%;height:620px;background:var(--dark);overflow:hidden}
@@ -124,9 +134,16 @@ footer .fbot a{color:#cfcfc6}
   footer .fnav{gap:34px}
 }
 
+/* ---- Phone nav: smaller logo, hamburger menu ---- */
+@media(max-width:640px){
+  .logo-img{height:26px}
+  .nav .nav-articles,.nav .nav-link-sobre{display:none}
+  .hamb{display:flex}
+  .nav .menu{gap:12px}
+}
+
 /* ---- Small phones ---- */
 @media(max-width:480px){
-  .nav .nav-articles{display:none}
   .card .cov{height:200px}
   .home-head h1{font-size:clamp(30px,9vw,40px)}
   footer .ftop{flex-direction:column;gap:26px}
