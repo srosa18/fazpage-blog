@@ -25,6 +25,7 @@ img{max-width:100%;display:block}
 /* Full-bleed cover */
 .cover{width:100%;height:620px;background:var(--dark);overflow:hidden}
 .cover svg{display:block;width:100%;height:100%}
+.home-cover{height:520px}
 
 /* Homepage */
 .home-head{padding-top:56px;padding-bottom:14px}
@@ -94,8 +95,6 @@ footer .fbot a{color:#cfcfc6}
 
 @media(max-width:760px){
   .col,.wide,footer .fcol{padding-left:22px;padding-right:22px}
-  .grid{grid-template-columns:1fr;gap:36px}
-  .cover{height:340px}
-  .nav{padding:18px 22px}
-  .nav .menu{gap:18px}
-}
+  .read{padding-left:22px;padding-right:22px}
+  .grid{grid-template-columns:1fr;gap:34px}
+  
