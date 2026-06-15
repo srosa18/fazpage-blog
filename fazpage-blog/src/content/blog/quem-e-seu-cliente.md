@@ -5,6 +5,7 @@ pubDate: 2026-06-14
 pillar: "P2"
 pillarLabel: "Quem é o seu cliente"
 author: "Sandro Rosa"
+cover: "/IMAGENS/quem-e-seu-cliente.png"
 draft: false
 ---
 
