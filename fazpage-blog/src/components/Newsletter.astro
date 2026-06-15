@@ -5,7 +5,7 @@
     <button class="fp-news-close" type="button" aria-label="Fechar">&times;</button>
     <div class="fp-news-body">
       <div class="fp-news-kicker">Newsletter da FazPage</div>
-      <h3 class="fp-news-title">Uma conversa de dono para dono.</h3>
+      <h3 class="fp-news-title">Uma conversa de dono <br />para dono.</h3>
       <p class="fp-news-text">Receba insights práticos e explicações simples sobre sites, landing pages, e-commerce e estratégias digitais. Toda segunda-feira, direto no seu e-mail.</p>
       <form class="fp-news-form" action="https://assets.mailerlite.com/jsonp/2446425/forms/190348040053196192/subscribe" method="post" target="fp-news-iframe">
         <input class="fp-news-input" type="email" name="fields[email]" required placeholder="seu melhor e-mail" aria-label="seu e-mail" autocomplete="email" />
@@ -25,6 +25,7 @@
 </div>
 <style>
   .fp-news-overlay{position:fixed;inset:0;z-index:1000;background:rgba(10,12,8,.55);display:flex;align-items:center;justify-content:center;padding:20px}
+  .fp-news-overlay[hidden]{display:none}
   .fp-news-card{position:relative;width:100%;max-width:420px;background:var(--paper);border:1px solid var(--line);padding:34px 32px 28px}
   .fp-news-close{position:absolute;top:10px;right:12px;width:34px;height:34px;background:none;border:0;font-size:26px;line-height:1;color:var(--muted);cursor:pointer}
   .fp-news-kicker{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);font-weight:600;margin-bottom:12px}
