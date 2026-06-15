@@ -5,6 +5,7 @@ pubDate: 2026-06-12
 pillar: "P3"
 pillarLabel: "Não perca quem chegou"
 author: "Sandro Rosa"
+cover: "/IMAGENS/dinheiro-que-escapa.png"
 ---
 
 Chega uma mensagem no WhatsApp. "Oi, vi seu trabalho, queria saber mais." Você está no meio de uma entrega, com as mãos cheias. Pensa: respondo daqui a pouco com calma. O pouco vira o fim do dia, o fim do dia vira amanhã, e amanhã aquela mensagem já está soterrada por outras dez. Quando você lembra, três dias se passaram. Você responde. A pessoa não responde mais. Ela já resolveu com outro.
