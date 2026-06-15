@@ -1,11 +1,13 @@
 ---
+const path = Astro.url.pathname;
+const onSobre = path === '/sobre' || path.startsWith('/sobre/');
 ---
 <header>
   <nav class="nav">
     <a href="/" aria-label="FazPage Blog"><img class="logo-img" src="/logo.svg" alt="FazPage" /></a>
     <div class="menu">
-      <a href="/" class="active nav-articles">Artigos</a>
-      <a href="/sobre/" class="nav-link-sobre">Sobre</a>
+      <a href="/" class:list={["nav-articles", { active: !onSobre }]}>Artigos</a>
+      <a href="/sobre/" class:list={["nav-link-sobre", { active: onSobre }]}>Sobre</a>
       <a class="pill" href="https://fazpage.com.br" target="_blank" rel="noopener">fazpage.com.br</a>
       <button class="hamb" type="button" aria-label="Abrir menu" aria-expanded="false">
         <span></span><span></span><span></span>
