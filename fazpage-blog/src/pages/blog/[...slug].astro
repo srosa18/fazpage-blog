@@ -28,7 +28,7 @@ const all = (await getCollection('blog', ({ data }) => !data.draft))
     </div>
   </div>
 
-  <div class="cover"><Cover pillar={post.data.pillar} /></div>
+  <div class="cover">{post.data.cover ? <img src={post.data.cover} alt="" style="width:100%;height:100%;object-fit:cover" /> : <Cover pillar={post.data.pillar} />}</div>
 
   <article class="prose read">
     <Content />
@@ -74,7 +74,7 @@ const all = (await getCollection('blog', ({ data }) => !data.draft))
       <div class="grid">
         {all.map((p) => (
           <a class="card" href={`/blog/${p.id}/`}>
-            <div class="cov"><Cover pillar={p.data.pillar} /></div>
+            <div class="cov">{p.data.cover ? <img src={p.data.cover} alt="" style="width:100%;height:100%;object-fit:cover" /> : <Cover pillar={p.data.pillar} />}</div>
             <h3>{p.data.title}</h3>
             <p>{p.data.description}</p>
             <div class="foot"><span>{fmt(p.data.pubDate)}</span><span class="more">Ler mais →</span></div>
