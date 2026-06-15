@@ -66,6 +66,10 @@ img{max-width:100%;display:block}
 
 .related{margin-top:64px}
 
+/* Comments */
+.comments{margin-top:48px}
+.cmt-h{font-size:22px;font-weight:500;letter-spacing:-.01em;color:var(--ink);padding-bottom:16px;border-bottom:1px solid var(--ink);margin-bottom:22px}
+
 /* Footer */
 footer{background:var(--footer);color:#cfcfc6;padding:58px 0 30px;margin-top:72px}
 footer .fcol{max-width:var(--wide);margin:0 auto;padding:0 40px}
