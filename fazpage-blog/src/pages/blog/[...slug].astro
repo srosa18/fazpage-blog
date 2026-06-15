@@ -98,7 +98,7 @@ const all = (await getCollection('blog', ({ data }) => !data.draft))
           if (!doc.getElementById('fp-cusdis-style')) {
             var st = doc.createElement('style');
             st.id = 'fp-cusdis-style';
-            st.textContent = 'input,textarea{border:1px solid #bfbfb4 !important;border-radius:8px !important;background:#fff !important;color:#16160f !important} input:focus,textarea:focus{border-color:#5f8f12 !important;outline:none !important;box-shadow:0 0 0 2px rgba(168,255,62,.35) !important}';
+            st.textContent = 'input,textarea{border:1px solid #bfbfb4 !important;border-radius:0 !important;background:#fff !important;color:#16160f !important} input:focus,textarea:focus{border-color:#5f8f12 !important;outline:none !important;box-shadow:0 0 0 2px rgba(168,255,62,.35) !important}';
             (doc.head || doc.documentElement).appendChild(st);
           }
           var lbl = doc.querySelector('label[for="reply_content"]');
