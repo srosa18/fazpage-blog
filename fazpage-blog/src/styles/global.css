@@ -27,8 +27,9 @@ img{max-width:100%;display:block}
 /* Homepage */
 .home-head{padding:56px 0 14px}
 .home-head .kick{display:inline-block;background:var(--green);color:#142400;font-size:12px;font-weight:600;letter-spacing:.03em;padding:5px 12px;border-radius:6px}
-.home-head h1{font-size:clamp(30px,4.4vw,46px);font-weight:400;line-height:1.08;letter-spacing:-.02em;margin:18px 0 6px;max-width:20ch}
+.home-head h1{font-size:clamp(40px,6vw,68px);font-weight:400;line-height:1.04;letter-spacing:-.025em;margin:18px 0 8px;max-width:18ch}
 .home-head p{font-size:18px;color:var(--muted);max-width:48ch}
+.feat{padding:0}
 .feat .ft-meta{font-size:12px;font-weight:600;letter-spacing:.02em;color:var(--green-deep);margin:22px 0 8px}
 .feat h2{font-size:clamp(26px,3.4vw,38px);font-weight:400;line-height:1.1;letter-spacing:-.02em;color:var(--ink);max-width:22ch}
 .feat .ft-sub{font-size:17px;color:var(--muted);margin-top:12px;max-width:60ch}
