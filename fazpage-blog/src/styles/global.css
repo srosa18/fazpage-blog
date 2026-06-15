@@ -65,6 +65,10 @@ img{max-width:100%;display:block}
 .prose ol,.prose ul{margin:0 0 1.6em;padding-left:1.3em}
 .prose li{margin-bottom:.7em;line-height:1.7;color:var(--body)}
 .prose li strong{color:var(--ink)}
+.glossario{background:var(--paper-2);border-left:3px solid var(--green);border-radius:0 10px 10px 0;padding:18px 22px;margin:36px 0 10px}
+.glossario .g-h{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--green-deep);font-weight:600;margin-bottom:8px}
+.glossario p{font-size:16px;line-height:1.7;color:var(--body);margin:0}
+.glossario p strong{color:var(--ink)}
 .back{display:inline-block;margin-top:8px;font-size:14px;color:var(--muted)}
 
 .related{margin-top:64px}
