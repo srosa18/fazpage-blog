@@ -10,6 +10,7 @@ const blog = defineCollection({
     pillar: z.string(),
     pillarLabel: z.string(),
     author: z.string().default('Sandro Rosa'),
+    cover: z.string().optional(),
     draft: z.boolean().default(false),
   }),
 });
