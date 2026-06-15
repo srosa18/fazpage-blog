@@ -81,6 +81,11 @@ img{max-width:100%;display:block}
 .glossario .g-h{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--green-deep);font-weight:600;margin-bottom:8px}
 .glossario p{font-size:16px;line-height:1.7;color:var(--body);margin:0}
 .glossario p strong{color:var(--ink)}
+.cta-analise{background:var(--footer);border-radius:14px;padding:30px 32px;margin:44px 0 14px}
+.cta-analise .cta-h{font-size:20px;font-weight:600;color:#fff;margin-bottom:10px}
+.cta-analise p{font-size:16px;line-height:1.6;color:#c4c4ba;margin:0 0 20px}
+.cta-btn{display:inline-block;background:var(--green);color:#142400;font-weight:600;font-size:15px;padding:13px 22px;border-radius:24px}
+.cta-btn:hover{filter:brightness(.96)}
 .back{display:inline-block;margin-top:8px;font-size:14px;color:var(--muted)}
 .sobre-sub{font-size:20px;line-height:1.5;color:var(--muted);max-width:60ch;margin-top:14px}
 .sobre-cta{display:inline-block;background:var(--green);color:#142400;font-weight:600;font-size:15px;padding:13px 22px;border-radius:24px}
@@ -132,6 +137,7 @@ footer .fbot a{color:#cfcfc6}
   .prose > p:first-of-type::first-letter{font-size:56px;margin:4px 10px 0 0}
   .prose h2{font-size:24px;margin:36px 0 14px}
   .prose blockquote p{font-size:19px}
+  .cta-analise{padding:24px 22px}
 
   footer{padding:44px 0 28px;margin-top:56px}
   footer .ftop{gap:30px}
