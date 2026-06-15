@@ -28,7 +28,7 @@ const all = (await getCollection('blog', ({ data }) => !data.draft))
     </div>
   </div>
 
-  <div class="cover">{post.data.cover ? <img src={post.data.cover} alt="" style="width:100%;height:100%;object-fit:cover" /> : <Cover pillar={post.data.pillar} />}</div>
+  <div class="cover" style="margin-top:44px">{post.data.cover ? <img src={post.data.cover} alt="" style="width:100%;height:100%;object-fit:cover" /> : <Cover pillar={post.data.pillar} />}</div>
 
   <article class="prose read">
     <Content />
