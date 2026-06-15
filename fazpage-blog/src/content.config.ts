@@ -11,6 +11,7 @@ const blog = defineCollection({
     pillarLabel: z.string(),
     author: z.string().default('Sandro Rosa'),
     cover: z.string().optional(),
+    credit: z.string().optional(),
     term: z.string().optional(),
     termDef: z.string().optional(),
     draft: z.boolean().default(false),
