@@ -33,7 +33,3 @@ O que fazer, sem complicar:
 Repare que nada disso é tecnologia. É hábito. A ferramenta só serve para sustentar o hábito de não deixar ninguém cair no esquecimento. Quem já te procurou é o cliente mais fácil e mais barato que você vai ter, porque a parte difícil, fazer a pessoa se interessar, já aconteceu.
 
 Seu próximo passo é hoje, e leva dez minutos. Volte na sua caixa de mensagem e procure os três últimos contatos que você deixou sem resposta. Responda os três agora, mesmo os antigos, mesmo que pareça tarde. Não é tarde tanto quanto você imagina. E enquanto faz isso, você vai sentir na pele quantos negócios estavam ali parados, esperando só uma mensagem sua.
-
-Agora me conta aqui embaixo: hoje, onde você guarda seus contatos? Na cabeça, no WhatsApp, numa planilha, ou em lugar nenhum? Escreve nos comentários, sem vergonha, porque a maioria começa na bagunça mesmo.
-
-E quem já achou um jeito que funciona, divide com a gente. Esse espaço é isso: dono de negócio ajudando dono de negócio a não deixar dinheiro escapar. Se você está perdido em como organizar, comenta sua situação que a FazPage lê e responde por aqui.

@@ -40,7 +40,3 @@ Agora, o que fazer com isso. Não precisa refazer nada do zero. Comece por estes
 Repare numa coisa: nenhum desses cinco é sobre deixar o site mais bonito. É sobre deixar o caminho mais fácil. Bonito ajuda, mas fácil é o que vende. Um site bem feito não é o que tem mais efeito visual. É o que tira os obstáculos entre a vontade de comprar e o ato de comprar.
 
 O seu próximo passo é de cinco minutos. Pegue o celular, abra seu site como se você fosse um cliente que nunca ouviu falar de você, e marque um cronômetro de cinco segundos. No fim dos cinco segundos, você entendeu o que é, para quem é e o que clicar? Se a resposta for não, você acabou de achar exatamente onde está perdendo venda. E achar o problema é mais da metade do caminho para resolver.
-
-Agora é a sua vez, e eu quero saber. Faça esse teste dos cinco segundos e conta aqui embaixo: qual dos cinco motivos foi o que mais pegou no seu site? Escreve nos comentários, mesmo que seja só "demora pra carregar" ou "não acho o botão".
-
-Esse espaço aqui é nosso. Dono de negócio trocando ideia com dono de negócio. Se você já descobriu um ajuste que funcionou no seu site, divide com a gente, porque tem muita gente passando pelo mesmo aperto e a sua experiência ajuda mais do que você imagina. E se travou em algum ponto, comenta a dúvida. A FazPage lê e responde por aqui.

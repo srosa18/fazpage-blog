@@ -32,7 +32,3 @@ Como virar essa chave, na prática:
 Repare que nada disso é sobre deixar o site mais bonito ou mais cheio. É sobre deixar ele mais fácil para uma pessoa específica, com uma pressa específica, resolver uma coisa específica. Quando você desenha pensando nela, o site fica mais simples, e mais simples vende mais.
 
 Seu próximo passo custa um café. Chame alguém que não conhece o seu negócio, um amigo, um vizinho, um parente. Peça para essa pessoa fazer uma tarefa no seu site, tipo "descobre quanto custa tal coisa" ou "tenta agendar um horário". E aí faça a parte mais difícil: fique calado e só observe. Onde ela hesitar, onde ela franzir a testa, onde ela perguntar "e agora?", é exatamente ali que o seu cliente real está se perdendo todos os dias.
-
-Agora me conta aqui embaixo: qual é a primeira pergunta que o seu cliente faz antes de fechar com você? Escreve nos comentários, porque essa resposta é o que deveria estar no topo do seu site, e muita gente nunca parou pra pensar nela.
-
-E quem já reformou o site pensando no cliente e viu diferença, divide com a gente como foi. Esse espaço é dono de negócio ajudando dono de negócio a enxergar pelos olhos de quem compra. Se você está em dúvida sobre o que a sua página deveria responder primeiro, comenta seu caso que a FazPage lê e responde por aqui.
