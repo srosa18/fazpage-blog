@@ -32,6 +32,12 @@ const all = (await getCollection('blog', ({ data }) => !data.draft))
 
   <article class="prose read">
     <Content />
+    {post.data.term && (
+      <aside class="glossario">
+        <div class="g-h">Em português claro</div>
+        <p><strong>{post.data.term}.</strong> {post.data.termDef}</p>
+      </aside>
+    )}
     <a class="back" href="/">← Voltar para os artigos</a>
   </article>
 
