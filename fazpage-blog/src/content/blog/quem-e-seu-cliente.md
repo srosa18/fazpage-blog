@@ -1,11 +1,11 @@
 ---
 title: "Antes de pensar no site, pense na pessoa do outro lado"
 description: "O erro mais comum de quem faz um site é começar pelo site. O começo certo é a pessoa que vai usar ele."
-pubDate: 2026-06-29
+pubDate: 2026-06-14
 pillar: "P2"
 pillarLabel: "Quem é o seu cliente"
 author: "Sandro Rosa"
-draft: true
+draft: false
 ---
 
 Quando chega a hora de fazer ou arrumar o site, quase todo dono de negócio começa do mesmo jeito. Pensa na cor que gosta, na foto que acha bonita, no texto que fala tudo que a empresa faz. Pensa, sem perceber, em si mesmo. E aí monta um site que agrada o dono e confunde o cliente.

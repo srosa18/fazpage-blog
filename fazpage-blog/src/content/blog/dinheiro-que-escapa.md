@@ -1,7 +1,7 @@
 ---
 title: "O dinheiro que escapa: os contatos que você esqueceu de responder"
 description: "Quem chega interessado é o cliente mais fácil que você vai ter. E é exatamente quem mais escapa, em silêncio, todo dia."
-pubDate: 2026-06-22
+pubDate: 2026-06-12
 pillar: "P3"
 pillarLabel: "Não perca quem chegou"
 author: "Sandro Rosa"
