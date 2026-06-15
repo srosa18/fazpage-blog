@@ -6,6 +6,7 @@ pillar: "P1"
 pillarLabel: "Site que não vende"
 author: "Sandro Rosa"
 cover: "/IMAGENS/site-que-nao-vende.png"
+credit: "Adobe Stock"
 term: "CRO (otimização de conversão)"
 termDef: "São os ajustes no seu site para transformar mais visitantes em clientes, mexendo na estrutura e na ordem em que as coisas aparecem (a arquitetura da informação). Muitas vezes o que falta para o seu site vender não é mais visita, é estrutura de CRO."
 ---

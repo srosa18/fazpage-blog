@@ -6,6 +6,7 @@ pillar: "P3"
 pillarLabel: "Não perca a venda"
 author: "Sandro Rosa"
 cover: "/IMAGENS/dinheiro-que-escapa.png"
+credit: "Adobe Stock"
 term: "CRM (gestão de relacionamento)"
 termDef: "É um lugar só para guardar quem falou com você, em que ponto da conversa cada um está e qual o próximo passo. Pode ser um app ou uma planilha simples; o que importa é não deixar nenhum contato esfriar esquecido."
 ---
