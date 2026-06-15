@@ -1,5 +1,11 @@
 ---
 import Base from '../layouts/Base.astro';
+import Cover from '../components/Cover.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const fmt = (d) => d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
 ---
 <Base title="Sobre" description="Explicamos, em linguagem simples, como sites, landing pages, e-commerces e estratégias digitais podem ajudar pequenas e médias empresas a crescer.">
   <div class="art-head col">
@@ -20,6 +26,21 @@ import Base from '../layouts/Base.astro';
     <p>Porque você não precisa se tornar especialista em marketing para tomar boas decisões.</p>
     <p>Precisa apenas entender o suficiente para fazer seu negócio evoluir.</p>
     <p style="margin-top:10px"><a class="sobre-cta" href="https://fazpage.com.br" target="_blank" rel="noopener">Veja como a FazPage transforma sites em oportunidades →</a></p>
-    <a class="back" href="/">← Voltar para os artigos</a>
   </article>
+
+  {posts.length > 0 && (
+    <section class="related wide">
+      <div class="section-h">Mais artigos</div>
+      <div class="grid">
+        {posts.map((post) => (
+          <a class="card" href={`/blog/${post.id}/`}>
+            <div class="cov">{post.data.cover ? <img src={post.data.cover} alt="" style="width:100%;height:100%;object-fit:cover" /> : <Cover pillar={post.data.pillar} />}</div>
+            <h3>{post.data.title}</h3>
+            <p>{post.data.description}</p>
+            <div class="foot"><span>{fmt(post.data.pubDate)}</span><span class="more">Ler mais →</span></div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
 </Base>
