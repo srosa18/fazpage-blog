@@ -1,0 +1,71 @@
+---
+---
+<div id="fp-news" class="fp-news-overlay" hidden>
+  <div class="fp-news-card" role="dialog" aria-modal="true" aria-label="Inscrição na newsletter da FazPage">
+    <button class="fp-news-close" type="button" aria-label="Fechar">&times;</button>
+    <div class="fp-news-body">
+      <div class="fp-news-kicker">Newsletter da FazPage</div>
+      <h3 class="fp-news-title">Receba ideias práticas toda segunda</h3>
+      <p class="fp-news-text">Um e-mail curto pra te ajudar a vender mais na internet e atender melhor o cliente. Em português claro, sem jargão.</p>
+      <form class="fp-news-form" action="https://assets.mailerlite.com/jsonp/2446425/forms/190348040053196192/subscribe" method="post" target="fp-news-iframe">
+        <input class="fp-news-input" type="email" name="fields[email]" required placeholder="seu melhor e-mail" aria-label="seu e-mail" autocomplete="email" />
+        <input type="hidden" name="ml-submit" value="1" />
+        <input type="hidden" name="anticsrf" value="true" />
+        <button class="fp-news-btn" type="submit">Quero receber</button>
+      </form>
+      <p class="fp-news-foot">Sem spam. Cancele quando quiser.</p>
+    </div>
+    <div class="fp-news-success" hidden>
+      <div class="fp-news-kicker">Newsletter da FazPage</div>
+      <h3 class="fp-news-title">Inscrição quase pronta</h3>
+      <p class="fp-news-text">Enviei um e-mail de confirmação pra você. Abra sua caixa de entrada e confirme pra começar a receber as novidades de toda segunda.</p>
+    </div>
+  </div>
+  <iframe name="fp-news-iframe" title="newsletter" style="display:none"></iframe>
+</div>
+<style>
+  .fp-news-overlay{position:fixed;inset:0;z-index:1000;background:rgba(10,12,8,.55);display:flex;align-items:center;justify-content:center;padding:20px}
+  .fp-news-card{position:relative;width:100%;max-width:420px;background:var(--paper);border:1px solid var(--line);padding:34px 32px 28px}
+  .fp-news-close{position:absolute;top:10px;right:12px;width:34px;height:34px;background:none;border:0;font-size:26px;line-height:1;color:var(--muted);cursor:pointer}
+  .fp-news-kicker{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);font-weight:600;margin-bottom:12px}
+  .fp-news-title{font-size:23px;font-weight:600;line-height:1.15;color:var(--ink);margin:0 0 12px}
+  .fp-news-text{font-size:15px;line-height:1.6;color:var(--muted);margin:0 0 20px}
+  .fp-news-form{margin:0}
+  .fp-news-input{width:100%;height:46px;padding:0 18px;border:1px solid #bfbfb4;border-radius:24px;background:#fff;color:var(--ink);font-size:15px;font-family:inherit;margin-bottom:12px;box-sizing:border-box}
+  .fp-news-input:focus{outline:none;border-color:var(--green-deep);box-shadow:0 0 0 2px rgba(168,255,62,.4)}
+  .fp-news-btn{width:100%;height:46px;background:var(--green);color:#142400;font-weight:600;font-size:15px;font-family:inherit;border:0;border-radius:24px;cursor:pointer}
+  .fp-news-btn:hover{filter:brightness(.96)}
+  .fp-news-foot{font-size:12px;color:var(--muted);text-align:center;margin:16px 0 0}
+  .fp-news-success .fp-news-text{margin-bottom:0}
+  @media(max-width:480px){.fp-news-card{padding:30px 22px 24px}}
+</style>
+<script is:inline>
+  (function () {
+    var KEY = 'fp_news_v1';
+    var DAYS = 30;
+    function snooze() { try { localStorage.setItem(KEY, String(Date.now() + DAYS * 864e5)); } catch (e) {} }
+    try {
+      var until = localStorage.getItem(KEY);
+      if (until && Date.now() < parseInt(until, 10)) return;
+    } catch (e) {}
+    var overlay = document.getElementById('fp-news');
+    if (!overlay) return;
+    function open() { overlay.removeAttribute('hidden'); }
+    function close() { overlay.setAttribute('hidden', ''); snooze(); }
+    setTimeout(open, 5000);
+    overlay.querySelector('.fp-news-close').addEventListener('click', close);
+    overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !overlay.hasAttribute('hidden')) close(); });
+    var form = overlay.querySelector('.fp-news-form');
+    form.addEventListener('submit', function () {
+      var email = form.querySelector('input[type=email]');
+      if (!email.value) return;
+      snooze();
+      setTimeout(function () {
+        overlay.querySelector('.fp-news-body').setAttribute('hidden', '');
+        overlay.querySelector('.fp-news-success').removeAttribute('hidden');
+        setTimeout(close, 5000);
+      }, 500);
+    });
+  })();
+</script>
