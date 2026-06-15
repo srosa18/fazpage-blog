@@ -3,9 +3,11 @@ title: "O dinheiro que escapa: os contatos que você esqueceu de responder"
 description: "Quem chega interessado é o cliente mais fácil que você vai ter. E é exatamente quem mais escapa, em silêncio, todo dia."
 pubDate: 2026-06-12
 pillar: "P3"
-pillarLabel: "Não perca quem chegou"
+pillarLabel: "Não perca a venda"
 author: "Sandro Rosa"
 cover: "/IMAGENS/dinheiro-que-escapa.png"
+term: "CRM (gestão de relacionamento)"
+termDef: "É um lugar só para guardar quem falou com você, em que ponto da conversa cada um está e qual o próximo passo. Pode ser um app ou uma planilha simples; o que importa é não deixar nenhum contato esfriar esquecido."
 ---
 
 Chega uma mensagem no WhatsApp. "Oi, vi seu trabalho, queria saber mais." Você está no meio de uma entrega, com as mãos cheias. Pensa: respondo daqui a pouco com calma. O pouco vira o fim do dia, o fim do dia vira amanhã, e amanhã aquela mensagem já está soterrada por outras dez. Quando você lembra, três dias se passaram. Você responde. A pessoa não responde mais. Ela já resolveu com outro.
