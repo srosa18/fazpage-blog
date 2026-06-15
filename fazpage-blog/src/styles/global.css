@@ -93,8 +93,42 @@ footer .fnav a{display:block;color:#cfcfc6;font-size:14px;margin-bottom:11px}
 footer .fbot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding-top:22px;font-size:13px;color:#7c7c72}
 footer .fbot a{color:#cfcfc6}
 
+/* ---- Tablet / mobile ---- */
 @media(max-width:760px){
   .col,.wide,footer .fcol{padding-left:22px;padding-right:22px}
   .read{padding-left:22px;padding-right:22px}
   .grid{grid-template-columns:1fr;gap:34px}
-  
+  .cover{height:300px}
+  .home-cover{height:300px}
+  .nav{padding:16px 22px}
+  .nav .menu{gap:16px;font-size:13px}
+  .pill{padding:8px 13px;font-size:12px}
+
+  .home-head{padding-top:38px}
+  .hero-h1 br{display:none}
+  .home-head h1{font-size:clamp(33px,8.5vw,46px);max-width:none !important}
+  .home-head p{font-size:16px;max-width:none}
+  .feat h2{max-width:none}
+  .feat .ft-sub{max-width:none}
+
+  .art-head{padding-top:34px}
+  .art-head h1{font-size:clamp(29px,7.5vw,42px)}
+  .prose{padding-top:30px}
+  .prose p,.prose li{font-size:17px}
+  .prose > p:first-of-type::first-letter{font-size:56px;margin:4px 10px 0 0}
+  .prose h2{font-size:24px;margin:36px 0 14px}
+  .prose blockquote p{font-size:19px}
+
+  footer{padding:44px 0 28px;margin-top:56px}
+  footer .ftop{gap:30px}
+  footer .fnav{gap:34px}
+}
+
+/* ---- Small phones ---- */
+@media(max-width:480px){
+  .nav .nav-articles{display:none}
+  .card .cov{height:200px}
+  .home-head h1{font-size:clamp(30px,9vw,40px)}
+  footer .ftop{flex-direction:column;gap:26px}
+  footer .fnav{gap:24px 40px;flex-wrap:wrap}
+}
