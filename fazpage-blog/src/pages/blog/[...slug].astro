@@ -65,6 +65,17 @@ const all = (await getCollection('blog', ({ data }) => !data.draft))
       data-page-url={pageUrl}
       data-page-title={post.data.title}>
     </div>
+    <script is:inline>
+      window.CUSDIS_LOCALE = {
+        nickname: 'Nome',
+        email: 'E-mail (opcional)',
+        reply: 'Escreva seu comentário...',
+        post_comment: 'Comentar',
+        comments: 'Comentários',
+        loading: 'Carregando...',
+        powered_by: 'Comentários por FazPage'
+      };
+    </script>
     <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
   </section>
 
