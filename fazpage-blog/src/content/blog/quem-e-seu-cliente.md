@@ -6,7 +6,7 @@ pillar: "P2"
 pillarLabel: "Quem é o seu cliente"
 author: "Sandro Rosa"
 cover: "/IMAGENS/quem-e-seu-cliente.png"
-credit: "Adobe Stock"
+credit: "Foto: Adobe Stock"
 term: "UX (experiência do usuário)"
 termDef: "É como é, na prática, para a pessoa do outro lado usar o seu site: se ela acha rápido o que procura ou se perde no caminho. UX bom não é firula de design, é a pessoa conseguir fazer o que veio fazer sem esforço."
 draft: false
